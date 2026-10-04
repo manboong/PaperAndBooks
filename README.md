@@ -1,39 +1,72 @@
-# 📚 Paper Review Repository
+# 📚 Paper & Book Notes
 
-A personal space for summarizing, archiving, and writing reviews for academic papers during my research and studies.
+A personal reading archive for academic papers, literature, and nonfiction.
 
-<br/>
+The goal of this repository is not only to keep summaries, but to leave a searchable record of what I understood, questioned, and want to revisit.
 
-## 📊 Quick Status
+## Repository Structure
 
-| Status | Tag | Meaning |
+```text
+.
+├── papers/
+│   ├── README.md
+│   └── network-science/
+│       ├── README.md
+│       └── YYYY-short-title.md
+├── books/
+│   ├── README.md
+│   ├── literature/
+│   │   └── README.md
+│   └── nonfiction/
+│       └── README.md
+└── templates/
+    ├── paper-review-template-eng.md
+    ├── paper-review-template-kr.md
+    ├── literature-review-template.md
+    └── nonfiction-review-template.md
+```
+
+## Status
+
+| Status | Badge | Meaning |
 | :---: | :---: | :--- |
-| **Done** | ![Done](https://img.shields.io/badge/Done-brightgreen) | Review Completed |
-| **In Progress** | ![In Progress](https://img.shields.io/badge/In--Progress-orange) | Currently Reading or Drafting |
-| **To-Read** | ![To Read](https://img.shields.io/badge/To--Read-lightgrey) | Saved for Later (Backlog) |
+| Done | ![Done](https://img.shields.io/badge/Done-brightgreen) | Finished reading and review |
+| In Progress | ![In Progress](https://img.shields.io/badge/In--Progress-orange) | Reading or drafting |
+| To Read | ![To Read](https://img.shields.io/badge/To--Read-lightgrey) | Backlog |
 
-<br/>
+## Academic Papers
 
-## 📝 Reading List
+### Network Science
 
-### :spider_web: Network Science
+| Status | Year | Title | Venue | Keywords | Review |
+| :---: | :---: | :--- | :--- | :--- | :---: |
+| ![In Progress](https://img.shields.io/badge/In--Progress-orange) | 1983 | Stochastic blockmodels: First steps. | Social Networks | SBM, Network Analysis | [Review](./papers/network-science/1983-SBM.md) |
+| ![In Progress](https://img.shields.io/badge/In--Progress-orange) | 2008 | Mixed membership stochastic blockmodels. | NeurIPS | MMSBM, Network Analysis | [Review](./papers/network-science/2008-MMSBM.md) |
+| ![To Read](https://img.shields.io/badge/To--Read-lightgrey) | 2022 | A Statistical Model of Bipartite Networks: Application to Cosponsorship in the United States Senate | Political Analysis | Bipartite Networks, MMSBM, Variational Inference | [Review](./papers/network-science/2022-biMMSBM.md) |
 
-| Status | Year | Title | Venue | Note / Keywords | Review Link |
-| :---: | :---: | :--- | :---: | :--- | :---: |
-| ![In Progress](https://img.shields.io/badge/In--Progress-orange) | 1983 | Stochastic blockmodels: First steps. | Social networks | SBM, Network Analysis | [Go to Review](./NetSci/1983-SBM.md) |
-| ![In Progress](https://img.shields.io/badge/In--Progress-orange) | 2008 | Mixed membership stochastic blockmodels. | Advances in neural information processing systems | MMSBM, Network Analysis | [Go to Review](./NetSci/2008-MMSBM.md) |
-| ![To Read](https://img.shields.io/badge/To--Read-lightgrey) | 2022 | A Statistical Model of Bipartite Networks: Application to Cosponsorship in the United States Senate | Political Analysis | Bipartite Networks, MMSBM, Variational Inference, Covariate Integration, Political Science | [Go to Review](./NetSci/2022-biMMSBM.md) |
-<!--
-### 💬 Natural Language Processing
+More details: [`papers/README.md`](./papers/README.md)
 
-| Status | Year | Title | Venue | Note / Keywords | Review Link |
-| :---: | :---: | :--- | :---: | :--- | :---: |
-| ![Done](https://img.shields.io/badge/Done-brightgreen) | 2017 | Attention Is All You Need | NeurIPS | Transformer, Self-Attention | [Go to Review](./nlp/2017-transformer.md) |
-| ![To Read](https://img.shields.io/badge/To--Read-lightgrey) | 2020 | Language Models are Few-Shot Learners | NeurIPS | GPT-3, In-Context Learning | - |
--->
----
+## Books
 
-## 📌 Review Template & Guidelines
+Book notes are separated by the type of reading because the questions worth recording are different.
 
-* When starting a new paper review, copy and use the [`templates/paper-review-template.md`](./templates/paper-review-template-eng.md) file.
-* Naming convention: `YYYY-paper-name.md` (e.g., `2017-transformer.md`)
+- **Literature** — novels, short stories, plays, poetry, and other literary works: [`books/literature/`](./books/literature/)
+- **Nonfiction** — philosophy, history, science, technology, society, essays, and other general books: [`books/nonfiction/`](./books/nonfiction/)
+
+See [`books/README.md`](./books/README.md) for conventions.
+
+## Naming Convention
+
+- Papers: `YYYY-short-title.md`
+- Books: `author-short-title.md`
+- Use lowercase/kebab-case when practical; established abbreviations such as `SBM` or `MMSBM` are fine.
+- Keep one review per file.
+
+## Templates
+
+- Paper review (English): [`templates/paper-review-template-eng.md`](./templates/paper-review-template-eng.md)
+- Paper review (Korean): [`templates/paper-review-template-kr.md`](./templates/paper-review-template-kr.md)
+- Literature review: [`templates/literature-review-template.md`](./templates/literature-review-template.md)
+- Nonfiction review: [`templates/nonfiction-review-template.md`](./templates/nonfiction-review-template.md)
+
+Review files can be written in Korean, English, Japanese, or any other language as needed.
