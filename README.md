@@ -22,8 +22,6 @@ The goal of this repository is not only to keep summaries, but to leave a search
 └── templates/
     ├── paper-review-template-eng.md
     ├── paper-review-template-kr.md
-    ├── literature-review-template.md
-    └── nonfiction-review-template.md
 ```
 
 ## Status
